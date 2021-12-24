@@ -18,3 +18,15 @@ footer div{
     text-align: center;
 }
 #more {display: none;}
+.text-gray {
+    color: #aaa;
+}
+
+.adritu {
+    height: 170px;
+    width: 140px;
+}
+form{
+    margin-top: 200px;
+    margin-left: 30px;
+}
