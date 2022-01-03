@@ -17,8 +17,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
 </head>
-<script src="fbase.js"></script>
-<script src="rml.js"></script>
+<script src="fbase.js" async></script>
+<script src="rml.js" async></script>
 <script>
     const firebaseConfig = {
         apiKey: "AIzaSyCYm8MnfTOjHbLNWP5caKW5nsKt2_ymmQA",
@@ -224,7 +224,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-md-4">
-                    <form id="reqform">
+                    <!-- <form id="reqform">
                         <div class="form-group">
                             <h4>Request a manga!</h4>
                             <label for="email">Email address</label>
@@ -240,12 +240,21 @@
 
                         <button type="submit" class="btn btn-primary" onclick="rafat()">Submit</button>
 
-                    </form>
+                    </form> -->
+                    <center>
+                        <h4>Request a manga</h4>
+                        <label for="fname">Manga name</label><br>
+                        <input type="" id="name" placeholder="Name:" name="name"> <br>
+                        <label for="fname">Your email</label><br>
+                        <input type="" id="email" title="email" placeholder="Email:"> <br>
+                        <button onclick="rafat()">Submit</button>
+                    </center>
 
                 </div>
             </div>
         </div>
     </section>
+
     <footer class="mt-5">
         <div class="container-fluid p-3 bg-info text-white">
             <b style="font-size: 15px;">Contact Us</b><br>

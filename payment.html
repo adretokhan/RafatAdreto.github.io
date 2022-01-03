@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="payment css/payment.css">
+</head>
+
+<body>
+    <main id='container'>
+        <aside id='info'>
+            <label for='paymentMethod'>Payment Method</label>
+            <select name='paymentMethod'>
+                <option>Visa</option>
+                <option>MasterCard</option>
+                <option>Elo</option>
+            </select>
+            
+
+            <!-- Credit Card Number -->
+            <label for='cardNumber'>Credit Card Number</label>
+            <input type='text' name='cardNumber' />
+
+            <!-- Credit Card Holder Name -->
+            <label for='cardholderName'>Cardholder Name</label>
+            <input type='text' name='cardholderName' />
+
+            <!-- Expiration Date -->
+            <label for='cardDate'>Expiration Date</label>
+            <input type='text' name='cardDate' />
+
+            <!-- CVV Card Number -->
+            <label for='cvv'>CVV</label>
+            <input type='text' name='cvv' />
+
+            <button id='makePayment'>MAKE A PAYMENT</button>
+        </aside>
+        <aside id='description'>
+            <h2>Buy Each volume</h2>
+            <h3>@ BDT 200</h3>
+            
+            <h1>BDT 200</h1>
+            
+        </aside>
+    </main>
+</body>
