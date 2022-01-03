@@ -7,7 +7,7 @@ function rafat() {
     var email = document.getElementById('email').value;
     var name = document.getElementById('name').value;
   
-    firebase.database().ref('User/' + email).set({
+    firebase.database().ref('User/' + name).set({
   
   
       email: email,
