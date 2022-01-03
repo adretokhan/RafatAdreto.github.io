@@ -1,9 +1,11 @@
+
+
 function rafat() {
+  
 
 
-
-    var email = document.getElementById("exampleInputEmail1").value;
-    var name = document.getElementById("exampleInputPassword1").value;
+    var email = document.getElementById('email').value;
+    var name = document.getElementById('name').value;
   
     firebase.database().ref('User/' + email).set({
   
