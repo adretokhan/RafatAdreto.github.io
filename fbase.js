@@ -21,6 +21,27 @@ function rafat() {
 
     }
   });
+  retrieveinfos();
+}
+function retrieveinfos(){
+  let ref=firebase.database().ref('User');
+  ref.on('value',gotdata);
+}
+function gotdata(data){
+  let info=data.val();
+  let keys=Object.keys(info);
+  for(let i=0;i<keys.length;i++){
+    let infodata=keys[i];
+    let name=info[infodata].name;
+    let email=info[infodata].email;
+    
+    let infores=document.querySelector('.inforesults');
+    infores.innerHTML += `<div>
+      <p><strong>Name: </strong>${name} <br/>
+      <a><strong>email: </strong>${email}</a><br/>
+      </p>
+    </div>`;
+  }
 }
 
 
