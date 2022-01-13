@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="carousel-07/carousel-07/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="carousel-07/carousel-07/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+    <link rel="stylesheet" href="carousel-07/carousel-07/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+</head>
+<script src="fbase.js" async></script>
+<script src="rml.js" async></script>
+<script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyCYm8MnfTOjHbLNWP5caKW5nsKt2_ymmQA",
+        authDomain: "mangapage-460de.firebaseapp.com",
+        databaseURL: "https://mangapage-460de-default-rtdb.firebaseio.com",
+        projectId: "mangapage-460de",
+        storageBucket: "mangapage-460de.appspot.com",
+        messagingSenderId: "331834852936",
+        appId: "1:331834852936:web:ee18edf06ab95fa15efa7d",
+        measurementId: "G-EPV0NZLLL1"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+</script>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-info navbar-dark">
+            <a class="navbar-brand" href="#">
+                <adr>ADRMANGA</adr>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="latest.html">Latest</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Publishers
+                        </a>
+                        <div class="dropdown-menu bg-info" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="Shueisha.html">Shueisha</a>
+                            <a class="dropdown-item" href="Kodansha.html">Kodansha</a>
+                            <a class="dropdown-item" href="KShoten.html">Kadokawa Shoten</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Genre
+                        </a>
+                        <div class="dropdown-menu bg-info" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="Action.html">Action</a>
+                            <a class="dropdown-item" href="Adventure.html">Adventure</a>
+                            <a class="dropdown-item" href="thriller.html">Thriller</a>
+                            <a class="dropdown-item" href="comedy.html">Comedy</a>
+                            <a class="dropdown-item" href="sliceoflife.html">Slice of Life</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="upcoming.html">Upcoming <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Manga Request <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <center>
+        <h4>Request a manga</h4>
+        <label for="fname">Manga name</label><br>
+        <input type="" id="name" placeholder="Name:" name="name"> <br>
+        <label for="fname">Your email</label><br>
+        <input type="" id="email" title="email" placeholder="Email:"> <br>
+        <button onclick="rafat()" type="submit" class="btn btn-primary mt-2">Submit</button>
+    </center>
+    
+    <footer class="rafat">
+        <div class="container-fluid p-3 bg-info text-white">
+            <b style="font-size: 15px;">Contact Us</b><br>
+            <i class="fas fa-address-book pt-3"><span style="font-size: 13px;">:+8801827044102</span></i><br>
+            <i class="fas fa-envelope pt-3"><span style="font-size: 13px;">: adreto.khan@gmail.com</span></i>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="carousel-07/carousel-07/js/owl.carousel.min.js"></script>
+
+    <script src="carousel-07/carousel-07/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
